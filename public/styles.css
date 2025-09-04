@@ -1,3 +1,105 @@
+/* Importação de fonte do Google Fonts para um visual mais elegante */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* --- Estilos Gerais --- */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f3e9; /* Um fundo creme suave */
+    color: #4b4b4b; /* Cinza escuro para o texto */
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e4d7c6; /* Um tom de rosa antigo para o cabeçalho */
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #6a4c93; /* Um roxo elegante para o título */
+}
+
+/* --- Estilos de Seção --- */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #a05c74; /* Um tom de rosa para os subtítulos */
+    border-bottom: 2px solid #e4d7c6;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* --- Estilos do Formulário --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #6a4c93;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #513a70;
+}
+
+/* --- Estilos da Lista de Presentes --- */
+#lista_itens_presentes {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista_itens_presentes li {
+    background-color: #f7f3f1;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Adicionado para quebrar a linha em telas pequenas */
+}
+
+.item-escolhido {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* --- Estilos de Rodapé --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 0.9em;
+}
+
 /* --- Estilos para telas menores (smartphones) --- */
 @media (max-width: 600px) {
     
@@ -22,7 +124,16 @@
         gap: 10px;
     }
 
+    input[type="text"] {
+        font-size: 0.9em;
+    }
+
     button[type="submit"] {
         width: 100%;
+    }
+    
+    #lista_itens_presentes li {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
