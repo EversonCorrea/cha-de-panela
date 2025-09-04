@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Panela da Livia e [Seu Nome]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chá de Panela da Livia & [Seu Nome]</h1>
+        <p>Mal podemos esperar para celebrar este momento especial com você!</p>
+    </header>
+
+    <main>
+        <section id="confirmacao-presenca">
+            <h2>Confirme Sua Presença</h2>
+            <p>Por favor, nos ajude a organizar melhor o evento e nos diga se você irá.</p>
+            <form id="form-confirmacao">
+                <label for="nome_convidado">Seu Nome:</label>
+                <input type="text" id="nome_convidado" name="nome" placeholder="Seu nome completo" required>
+                <button type="submit">Eu Vou!</button>
+            </form>
+            <p id="mensagem_confirmacao"></p>
+        </section>
+
+        <section id="lista-presentes">
+            <h2>Nossa Lista de Presentes</h2>
+            <p>Sua presença já é o nosso maior presente, mas se quiser nos presentear, aqui estão algumas sugestões.</p>
+            <ul id="lista_itens_presentes">
+                <p>Carregando a lista de presentes...</p>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Chá de Panela da Livia & Everson</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
